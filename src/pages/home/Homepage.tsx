@@ -1,3 +1,4 @@
+import Contact from "../../components/Contact";
 import HeroSlider from "./Hero";
 
 interface Slide {
@@ -33,6 +34,7 @@ const HomePage = () => {
   return (
     <div>
       <HeroSlider slides={slidesData} autoPlay={true} interval={3000} />
+      <Contact />
     </div >
   );
 };
