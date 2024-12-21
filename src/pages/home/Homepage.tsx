@@ -11,19 +11,19 @@ interface Slide {
 const slidesData: Slide[] = [
   {
     id: 1,
-    image: "/image1.webp",
+    image: "/hero1.jpg",
     title: "",
     description: "",
   },
   {
     id: 2,
-    image: "/image2.webp",
+    image: "/hero2.jpg",
     title: "",
     description: "",
   },
   {
     id: 3,
-    image: "https://via.placeholder.com/1920x500/7fff7f",
+    image: "/hero3.jpg",
     title: "",
     description: "",
   },

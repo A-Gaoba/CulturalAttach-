@@ -17,7 +17,13 @@ const Navbar: React.FC = () => {
   return (
     <div dir="rtl">
       {/* Navbar Section */}
-      <nav className="bg-white shadow  w-full z-50 p-2">
+      <nav className="bg-white shadow  w-full z-50 p-2"
+          style={{
+            backgroundImage: "url('/bg.png')",
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+          }}
+      >
         <div className="flex justify-between md:justify-center md:items-center px-4 py-3 md:py-4 md:px-6">
           {/* Logo and Title */}
           <div className="flex items-center space-x-3 space-x-reverse">
