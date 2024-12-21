@@ -62,7 +62,7 @@ const TeamHierarchy: React.FC = () => {
       </div>
 
       {/* Third Level (Departments) */}
-      <div className="flex justify-center items-start space-x-2 gap-6">
+      <div className="flex flex-wrap justify-center items-center gap-6 sm:flex-row sm:gap-8">
         <div className="flex flex-col items-center relative">
           <TeamMember
             name="فلورا"

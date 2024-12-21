@@ -18,10 +18,10 @@ const Navbar: React.FC = () => {
     <div dir="rtl">
       {/* Navbar Section */}
       <nav className="bg-white shadow  w-full z-50 p-2">
-        <div className="flex justify-center items-center px-4 py-3 md:py-4 md:px-6">
+        <div className="flex justify-between md:justify-center md:items-center px-4 py-3 md:py-4 md:px-6">
           {/* Logo and Title */}
           <div className="flex items-center space-x-3 space-x-reverse">
-            <div className="text-right">
+            <div className="text-right hidden md:flex flex-col p-4">
               <h1 className="text-lg font-bold text-gray-900">
                 الملحقية الثقافية بسفارة الجمهورية اليمنية - موسكو
               </h1>
@@ -29,7 +29,7 @@ const Navbar: React.FC = () => {
                 Культурный отдел (Посольство Республики Йемен в Москве)
               </p>
             </div>
-            <img src="/Yemen.png" alt="Logo" className="h-12 w-auto" />
+            <img src="/Yemen.png" alt="Logo" className="h-12 w-auto " />
           </div>
 
           {/* Burger Menu Icon */}
