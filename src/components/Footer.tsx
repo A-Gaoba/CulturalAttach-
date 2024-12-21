@@ -21,7 +21,7 @@ const Footer = () => {
               <input
                 type="email"
                 placeholder="studentname@gmail.com"
-                className="py-3 px-5 rounded-lg text-gray-800 dark:text-gray-200 bg-gray-200 dark:bg-gray-800 outline-none w-full placeholder:text-gray-600 dark:placeholder:text-gray-300"
+                className="py-3 px-5 rounded-lg text-gray-800 dark:text-gray-200 border outline-none w-full placeholder:text-gray-600 dark:placeholder:text-gray-300"
               />
               <button className="py-3 rounded-lg px-6 bg-red-600 dark:bg-red-500 text-white font-medium text-base w-full sm:w-max flex justify-center">
                 اشتراك
@@ -33,11 +33,13 @@ const Footer = () => {
 
       {/* Footer Bottom Section */}
       <div className="text-center text-gray-600 dark:text-gray-400 mt-4">
-        <p className="text-sm">
+        <div className="text-sm">
           <hr />
-          © 2024 - جميع الحقوق محفوظة. <br />
-          تم التصميم والتطوير بواسطة <a href="https://gaoba.vercel.app" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">gaoba</a>
-        </p>
+          <p className="p-2">
+            © 2024 - <span><a href="https://gaoba.vercel.app" target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">gaoba</a></span>
+            جميع الحقوق محفوظة.
+          </p>
+        </div>
       </div>
     </footer>
   );
