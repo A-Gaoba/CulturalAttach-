@@ -1,4 +1,3 @@
-import React from "react";
 import { About } from "./About";
 import { Sections } from "./Sections";
 import Speach from "./Speach";
