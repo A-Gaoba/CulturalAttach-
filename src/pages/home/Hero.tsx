@@ -28,14 +28,6 @@ const HeroSlider: React.FC<HeroSliderProps> = ({ slides, autoPlay = true, interv
     return () => clearInterval(slideInterval);
   }, [autoPlay, interval, slides.length]);
 
-  const handlePrev = () => {
-    setCurrentSlide((prevSlide) => (prevSlide - 1 + slides.length) % slides.length);
-  };
-
-  const handleNext = () => {
-    setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
-  };
-
   return (
     <div className="relative w-full h-screen overflow-hidden">
       {/* Slides */}
