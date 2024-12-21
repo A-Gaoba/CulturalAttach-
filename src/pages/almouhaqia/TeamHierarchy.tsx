@@ -33,11 +33,11 @@ const TeamHierarchy: React.FC = () => {
         <TeamMember
           name="د. خالد شعلل"
           title="المستشار الثقافي"
-          image="/path/to/image.jpg"
+          image="/photo.png"
           onClick={() => handleMemberClick({
             name: "د. خالد شعلل",
             title: "المستشار الثقافي",
-            image: "/path/to/image.jpg",
+            image: "/photo.png",
             bio: "Some bio about the member.",
             cvLink: "/cv.pdf"
           })}
@@ -46,15 +46,14 @@ const TeamHierarchy: React.FC = () => {
 
       {/* Second Level (Assistant Advisor) */}
       <div className="flex flex-col items-center mb-8 relative">
-        <div className="w-px h-8 bg-gray-500 absolute top-8"></div>
         <TeamMember
           name="أ. فؤاد الطائني"
           title="المستشار الثقافي المساعد"
-          image="/path/to/image.jpg"
+          image="/photo.png"
           onClick={() => handleMemberClick({
             name: "أ. فؤاد الطائني",
             title: "المستشار الثقافي المساعد",
-            image: "/path/to/image.jpg",
+            image: "/photo.png",
             bio: "Some bio about the member.",
             cvLink: "/cv.pdf"
           })}
@@ -67,11 +66,11 @@ const TeamHierarchy: React.FC = () => {
           <TeamMember
             name="فلورا"
             title="السكرتارية"
-            image="/path/to/image.jpg"
+            image="/photo.png"
             onClick={() => handleMemberClick({
               name: "فلورا",
               title: "السكرتارية",
-              image: "/path/to/image.jpg",
+              image: "/photo.png",
               bio: "Some bio about the member.",
               cvLink: "/cv.pdf"
             })}
@@ -82,11 +81,11 @@ const TeamHierarchy: React.FC = () => {
           <TeamMember
             name="؟ تقني"
             title="تقنية المعلومات"
-            image="/path/to/image.jpg"
+            image="/photo.png"
             onClick={() => handleMemberClick({
               name: "؟ تقني",
               title: "تقنية المعلومات",
-              image: "/path/to/image.jpg",
+              image: "/photo.png",
               bio: "Some bio about the member.",
               cvLink: "/cv.pdf"
             })}
@@ -97,11 +96,11 @@ const TeamHierarchy: React.FC = () => {
           <TeamMember
             name="أ. منصور الصلوي"
             title="الشؤون الأكاديمية"
-            image="/path/to/image.jpg"
+            image="/photo.png"
             onClick={() => handleMemberClick({
               name: "أ. منصور الصلوي",
               title: "الشؤون الأكاديمية",
-              image: "/path/to/image.jpg",
+              image: "/photo.png",
               bio: "Some bio about the member.",
               cvLink: "/cv.pdf"
             })}
@@ -112,11 +111,11 @@ const TeamHierarchy: React.FC = () => {
           <TeamMember
             name="د. أحمد المنغمس"
             title="العلاقات العامة والإعلام"
-            image="/path/to/image.jpg"
+            image="/photo.png"
             onClick={() => handleMemberClick({
               name: "د. أحمد المنغمس",
               title: "العلاقات العامة والإعلام",
-              image: "/path/to/image.jpg",
+              image: "/photo.png",
               bio: "Some bio about the member.",
               cvLink: "/cv.pdf"
             })}

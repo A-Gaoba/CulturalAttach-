@@ -4,7 +4,7 @@ interface TeamMemberProps {
   name: string;
   title: string;
   image: string;
-  onClick: () => void;  
+  onClick: () => void;
 }
 
 const TeamMember: React.FC<TeamMemberProps> = ({ name, title, image, onClick }) => {
