@@ -55,22 +55,6 @@ const HeroSlider: React.FC<HeroSliderProps> = ({ slides, autoPlay = true, interv
         ))}
       </div>
 
-      {/* Controls */}
-      <button
-        onClick={handlePrev}
-        className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-gray-700 bg-opacity-60 text-white rounded-full p-4 hover:bg-opacity-80 transition"
-        aria-label="Previous Slide"
-      >
-        &#8249;
-      </button>
-      <button
-        onClick={handleNext}
-        className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-gray-700 bg-opacity-60 text-white rounded-full p-4 hover:bg-opacity-80 transition"
-        aria-label="Next Slide"
-      >
-        &#8250;
-      </button>
-
       {/* Indicators */}
       <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 flex space-x-3">
         {slides.map((_, index) => (
