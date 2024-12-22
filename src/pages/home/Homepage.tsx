@@ -12,7 +12,7 @@ const HomePage: React.FC = () => {
   };
 
   return (
-    <div>
+    <div className="">
       <HeroSlider slide={slide} />
       <Contact />
     </div>

@@ -8,9 +8,9 @@ import Almouhaqia from "./pages/almouhaqia/Home";
 function App() {
 
   return (
-    <div className="">
+    <div>
       <Router>
-      <Navbar />
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/almouhaqia" element={<Almouhaqia />} />
