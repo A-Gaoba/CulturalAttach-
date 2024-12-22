@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/home/Homepage";
-import Almouhaqia from "./pages/almouhaqia/Almouhaqia";
+import Almouhaqia from "./pages/almouhaqia/Home";
 
 
 function App() {
