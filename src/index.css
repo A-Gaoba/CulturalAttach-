@@ -1,3 +1,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Subtitle Styles */
+.subtitle-container {
+  margin: 0 auto;
+  padding: 0;
+  text-transform: uppercase;
+  width: 90%;
+  text-align: center;
+  font-size: 3.5rem;
+}
+
+/* Wrapper Styles */
+.wrapper-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  pointer-events: none;
+}
+
+/* Title Styles */
+.title-container {
+  margin: 24px auto 0;
+  padding: 0;
+  width: 80%;
+  text-align: center;
+  font-size: 1.75rem;
+}
+
+/* Overlay Styles */
+.hero-slider-overlay {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.15);
+}
