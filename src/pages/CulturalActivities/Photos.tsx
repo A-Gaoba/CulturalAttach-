@@ -49,9 +49,9 @@ const ImageGallery = () => {
       {/* Modal */}
       {isModalOpen && selectedImage && (
         <div className="fixed inset-0 z-50 flex justify-center items-center bg-black bg-opacity-50">
-          <div className="relative">
+          <div className="relative max-w-4xl max-h-[80%] overflow-hidden bg-slate-600 rounded-lg p-4">
             <button
-              className="absolute top-2 right-2 text-white text-2xl"
+              className="absolute top-2 right-2 text-white text-3xl"
               onClick={closeModal}
             >
               X
@@ -59,7 +59,7 @@ const ImageGallery = () => {
             <img
               src={selectedImage}
               alt="Selected"
-              className="max-w-full max-h-full rounded-lg"
+              className="w-full h-auto max-h-[70vh] object-contain"
             />
           </div>
         </div>
