@@ -3,8 +3,7 @@ import React from "react";
 const Boffer: React.FC = () => {
   return (
     <section className="p-4 relative md:mt-8">
-
-      <div dir="rtl" className="relative h-24 lg:h-[18rem] flex items-center overflow-hidden w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
+      <div dir="rtl" className="relative h-24 lg:h-[18rem] md:h-96 flex items-center overflow-hidden w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
         {/* Red background curve */}
         <div className="absolute top-0 left-0 w-full h-full">
           <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -23,7 +22,7 @@ const Boffer: React.FC = () => {
 
 
         {/* Title and text */}
-        <div className="relative text-right pr-4 sm:pr-8 md:pt-6 z-10">
+        <div className="relative text-right md:pr-4 pr-1 md:pt-6 z-10">
           <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold text-black mb-2">
             الملحقية الثقافية
           </h1>
@@ -33,7 +32,7 @@ const Boffer: React.FC = () => {
         </div>
       </div>
     </section>
-  );
+      );
 };
 
 export default Boffer;
