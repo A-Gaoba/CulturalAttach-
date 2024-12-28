@@ -2,8 +2,8 @@ import React from "react";
 
 const Boffer: React.FC = () => {
   return (
-    <section className="p-4 relative md:mt-8">
-      <div dir="rtl" className="relative h-24 lg:h-[18rem] md:h-96 flex items-center overflow-hidden w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
+    <section className="relative">
+      <div dir="rtl" className="relative h-24 lg:h-[18rem] md:h-96 flex items-center overflow-hidden w-full max-w-7xl px-4 lg:px-5 mx-auto">
         {/* Red background curve */}
         <div className="absolute top-0 left-0 w-full h-full">
           <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
