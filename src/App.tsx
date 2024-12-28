@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/home/Homepage";
 import Almouhaqia from "./pages/almouhaqia/Home";
+import CulturalActivities from "./pages/CulturalActivities/Home";
 import Loading from "./components/Loading";
 import OnlineServices from "./pages/OnlineServices/OnlineServices";
 import { FaArrowUp } from "react-icons/fa";
@@ -49,6 +50,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/almouhaqia" element={<Almouhaqia />} />
           <Route path="/services" element={<OnlineServices />} />
+          <Route path="/activities" element={<CulturalActivities />} />
         </Routes>
         <Footer />
       </Router>
