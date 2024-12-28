@@ -2,7 +2,7 @@ import React from "react";
 
 const Boffer: React.FC = () => {
   return (
-    <div dir="rtl" className="relative h-32 sm:h-80 md:h-96 lg:h-[18rem] flex items-center overflow-hidden">
+    <div dir="rtl" className="relative h-24 lg:h-[18rem] flex items-center overflow-hidden">
       {/* Red background curve */}
       <div className="absolute top-0 left-0 w-full h-full">
         <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -14,7 +14,7 @@ const Boffer: React.FC = () => {
       <div className="absolute left-2 sm:left-4 md:left-8 lg:left-12 flex items-center">
         <div className="w-20 h-20 sm:w-28 sm:h-28 md:w-36 md:h-36 lg:w-48 lg:h-48 bg-black rounded-full flex items-center justify-center">
           <div className="w-16 h-16 sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 bg-white rounded-full flex items-center justify-center">
-            <img src="/Yemen.png" alt="Emblem" className="w-12 h-12 sm:w-16 sm:h-16 md:w-24 md:h-24 lg:w-32 lg:h-32" />
+            <img src="/yemen-minstry.png" alt="Emblem" className="w-12 h-12 sm:w-16 sm:h-16 md:w-24 md:h-24 lg:w-32 lg:h-32" />
           </div>
         </div>
       </div>
