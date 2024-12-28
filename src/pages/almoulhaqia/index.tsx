@@ -7,16 +7,16 @@ import Boffer from "./Boffer";
 import Contact from "../../components/Contact";
 
 const AlMoulhaqia: React.FC = () => {
-  return (
-    <div dir="rtl">
-      <Boffer />
-      <About />
-      <Sections />
-      <Speach />
-      <TeamHierarchy />
-      <Contact />
-    </div>
-  );
+	return (
+		<div dir="rtl">
+			<Boffer />
+			<About />
+			<Sections />
+			<Speach />
+			<TeamHierarchy />
+			<Contact />
+		</div>
+	);
 };
 
 export default AlMoulhaqia;
