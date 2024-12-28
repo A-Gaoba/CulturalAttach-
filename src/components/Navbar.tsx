@@ -6,9 +6,9 @@ const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const menuItems = [
-    { id: 1, label: "الرئيسيه", title: "الرئيسيه", path: "/" },
+    { id: 1, label: "الرئيسية", title: "الرئيسية", path: "/" },
     { id: 2, label: "الملحقية", title: "الملحقية", path: "/almoulhaqia" },
-    { id: 3, label: "خدمات الكترونيه", title: "خدمات الكترونيه", path: "/services" },
+    { id: 3, label: "خدمات الكترونية", title: "خدمات الكترونية", path: "/services" },
     { id: 4, label: "الأنشطة والفعاليات", title: "الأنشطة والفعاليات", path: "/activities" },
     { id: 5, label: "الإعلانات والإشعارات", title: "الإعلانات والإشعارات", path: "/announcements" },
     { id: 6, label: "اتصل بنا", title: "اتصل بنا", path: "/contact" },
