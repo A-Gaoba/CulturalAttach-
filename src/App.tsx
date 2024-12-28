@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/home/Homepage";
-import Almouhaqia from "./pages/almouhaqia/Home";
+import Almoulhaqia from "./pages/almoulhaqia/Home";
 import CulturalActivities from "./pages/CulturalActivities/Home";
 import Loading from "./components/Loading";
 import OnlineServices from "./pages/OnlineServices/OnlineServices";
@@ -48,7 +48,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/almouhaqia" element={<Almouhaqia />} />
+          <Route path="/almoulhaqia" element={<Almoulhaqia />} />
           <Route path="/services" element={<OnlineServices />} />
           <Route path="/activities" element={<CulturalActivities />} />
         </Routes>

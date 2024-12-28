@@ -6,7 +6,7 @@ import HeroSlider from "./Hero";
 const HomePage: React.FC = () => {
   const slide = {
     id: 1,
-    image: "/public/hero3.jpg",
+    image: "/hero3.jpg",
     title: "",
     description: "",
   };

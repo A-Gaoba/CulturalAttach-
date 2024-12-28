@@ -7,7 +7,7 @@ const Navbar: React.FC = () => {
 
   const menuItems = [
     { id: 1, label: "الرئيسيه", title: "الرئيسيه", path: "/" },
-    { id: 2, label: "الملحقية", title: "الملحقية", path: "/almouhaqia" },
+    { id: 2, label: "الملحقية", title: "الملحقية", path: "/almoulhaqia" },
     { id: 3, label: "خدمات الكترونيه", title: "خدمات الكترونيه", path: "/services" },
     { id: 4, label: "الأنشطة والفعاليات", title: "الأنشطة والفعاليات", path: "/activities" },
     { id: 5, label: "الإعلانات والإشعارات", title: "الإعلانات والإشعارات", path: "/announcements" },
