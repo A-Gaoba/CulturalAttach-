@@ -15,7 +15,7 @@ interface HeroSliderProps {
 
 const HeroSlider: React.FC<HeroSliderProps> = ({ slide }) => {
   return (
-    <div className="relative w-full h-screen overflow-hidden md:-mt-48 mt-44">
+    <div className="relative w-full h-screen overflow-hidden md:-mt-48 -mt-44">
       {/* Single Slide */}
       <div className="w-full h-screen flex-shrink-0 relative">
         <img
