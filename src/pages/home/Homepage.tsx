@@ -7,8 +7,8 @@ const HomePage: React.FC = () => {
   const slide = {
     id: 1,
     image: "/hero3.jpg",
-    title: "",
-    description: "",
+    title: "الموقع الرسمي للملحقيه الثقافيه اليمنيه في موسكو",
+    description: "يوفر معلومات شاملة ودقيقة لجميع الطلاب اليمنيين في روسيا.",
   };
 
   return (
