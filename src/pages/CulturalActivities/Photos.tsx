@@ -90,25 +90,11 @@ const ImageGallery = () => {
               X
             </button>
             <div className="flex justify-between items-center">
-              <button
-                className="text-white text-3xl"
-                onClick={prevImage}
-                disabled={currentImageIndex === 0}
-              >
-                &#10094;
-              </button>
               <img
                 src={images[currentImageIndex]}
                 alt="Selected"
                 className="w-full h-auto max-h-[70vh] object-contain"
               />
-              <button
-                className="text-white text-3xl"
-                onClick={nextImage}
-                disabled={currentImageIndex === images.length - 1}
-              >
-                &#10095;
-              </button>
             </div>
           </div>
         </div>
