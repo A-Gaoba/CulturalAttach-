@@ -57,7 +57,7 @@ function App() {
       {showScrollButton && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-4 right-4 bg-red-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 focus:outline-none"
+          className="fixed bottom-4 right-4 bg-red-500 text-white p-3 rounded-full shadow-lg hover:bg-red-700 focus:outline-none"
           aria-label="Scroll to top"
         >
           <FaArrowUp size={20} />
