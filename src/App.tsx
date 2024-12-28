@@ -8,6 +8,7 @@ import CulturalActivities from "./pages/CulturalActivities/Home";
 import Loading from "./components/Loading";
 import OnlineServices from "./pages/OnlineServices/OnlineServices";
 import { FaArrowUp } from "react-icons/fa";
+import Contact from "./components/Contact";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -51,6 +52,7 @@ function App() {
           <Route path="/almoulhaqia" element={<Almoulhaqia />} />
           <Route path="/services" element={<OnlineServices />} />
           <Route path="/activities" element={<CulturalActivities />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
       </Router>

@@ -22,10 +22,10 @@ const Navbar: React.FC = () => {
           {/* Logo and Title */}
           <div className="flex items-center space-x-3 space-x-reverse">
             <div className="text-right hidden md:flex flex-col p-4">
-              <h1 className="text-lg font-bold text-gray-100">
+              <h1 className="text-lg font-bold text-red-600">
                 الملحقية الثقافية بسفارة الجمهورية اليمنية - موسكو
               </h1>
-              <p className="text-sm text-gray-200 ">
+              <p className="text-sm text-red-400 ">
                 Культурный отдел (Посольство Республики Йемен в Москве)
               </p>
             </div>
