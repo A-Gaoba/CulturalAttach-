@@ -12,6 +12,19 @@ const DiplomaAttestation = () => {
         <li>قم بتقديم الطلب إلى الملحقية الثقافية.</li>
         <li>انتظر الرد على طلبك من خلال البريد الإلكتروني المسجل.</li>
       </ol>
+      <p className="text-gray-600 leading-relaxed mt-4">
+        يمكنك تحميل الملفات والمعلومات المطلوبة عبر النموذج التالي:
+        <p>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfLH2WsXVXUUcu3jJw9eeMCdY8wSBm9vXWSkLFrDJWr-2lFYA/viewform?usp=header"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-500 underline ml-1"
+          >
+            نموذج تحميل الملفات
+          </a>
+        </p>
+      </p>
     </div>
   );
 };
