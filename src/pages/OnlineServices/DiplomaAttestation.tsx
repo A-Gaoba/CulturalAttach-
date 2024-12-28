@@ -1,6 +1,6 @@
 const DiplomaAttestation = () => {
   return (
-    <div className="mb-6 p-6 bg-white shadow-md rounded-lg">
+    <div className="mb-6 p-6 bg-white shadow-md rounded-lg w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
       <h3 className="text-xl font-bold text-gray-800 mb-4">تصديق الدبلوم</h3>
       <p className="text-gray-600 leading-relaxed mb-4">
         لتصديق الدبلوم، يرجى اتباع الخطوات التالية:

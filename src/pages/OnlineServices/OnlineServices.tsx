@@ -5,7 +5,7 @@ import LawsAndRegulations from './LawsAndRegulations';
 
 const OnlineServices = () => {
   return (
-    <div className="p-4" dir='rtl'>
+    <div className="p-4 w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto" dir='rtl'>
       <h2 className="text-xl font-bold mb-4">الخدمات الإلكترونية</h2>
 
       {/* Navbar */}
