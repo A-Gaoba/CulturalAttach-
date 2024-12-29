@@ -1,14 +1,16 @@
 import React from "react";
 import Contact from "../../components/Contact";
 import HeroSlider from "./Hero";
+import { useTranslation } from "react-i18next";
 
 
 const HomePage: React.FC = () => {
+  const { t } = useTranslation();
   const slide = {
     id: 1,
     image: "/hero3.jpg",
-    title: "الموقع الرسمي للملحقيه الثقافيه اليمنيه في موسكو",
-    description: "يوفر معلومات شاملة ودقيقة لجميع الطلاب اليمنيين في روسيا.",
+    title: t("hero.title"),
+    description: t("hero.description"),
   };
 
   return (

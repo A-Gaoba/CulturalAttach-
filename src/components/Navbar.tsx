@@ -1,40 +1,77 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const Navbar: React.FC = () => {
-  const [selectedTitle, setSelectedTitle] = useState("الرئيسيه");
+  const { t, i18n } = useTranslation();
+  const [selectedTitle, setSelectedTitle] = useState(t("navbar.home"));
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isLanguageMenuOpen, setIsLanguageMenuOpen] = useState(false);
 
   const menuItems = [
-    { id: 1, label: "الرئيسيه", title: "الرئيسيه", path: "/" },
-    { id: 2, label: "الملحقية", title: "الملحقية", path: "/almoulhaqia" },
-    { id: 3, label: "خدمات الكترونيه", title: "خدمات الكترونيه", path: "/services" },
-    { id: 4, label: "الأنشطة والفعاليات", title: "الأنشطة والفعاليات", path: "/activities" },
-    { id: 5, label: "الإعلانات والإشعارات", title: "الإعلانات والإشعارات", path: "/announcements" },
-    { id: 6, label: "اتصل بنا", title: "اتصل بنا", path: "/contact" },
+    { id: 1, label: t("navbar.home"), title: t("navbar.home"), path: "/" },
+    { id: 2, label: t("navbar.about"), title: t("navbar.about"), path: "/almoulhaqia" },
+    { id: 3, label: t("navbar.services"), title: t("navbar.services"), path: "/services" },
+    { id: 4, label: t("navbar.activities"), title: t("navbar.activities"), path: "/activities" },
+    { id: 5, label: t("navbar.announcements"), title: t("navbar.announcements"), path: "/announcements" },
+    { id: 6, label: t("navbar.contact"), title: t("navbar.contact"), path: "/contact" },
   ];
 
+  const languages = [
+    { code: "en", name: "English" },
+    { code: "ar", name: "العربية" },
+    { code: "ru", name: "Русский" },
+  ];
+
+  const changeLanguage = (languageCode: string) => {
+    i18n.changeLanguage(languageCode);
+    setIsLanguageMenuOpen(false);
+  };
+
   return (
-    <div dir="rtl" className=" relative z-10">
+    <div dir={i18n.language === "ar" ? "rtl" : "ltr"} className="relative z-10">
       {/* Navbar Section */}
-      <nav className="shadow w-full p-2 md:pb-4 pb-1 border-b-2"      >
+      <nav className="shadow w-full p-2 md:pb-4 pb-1 border-b-2">
         <div className="flex justify-between md:justify-center md:items-center px-4 py-3 md:py-4 md:px-6">
           {/* Logo and Title */}
           <div className="flex items-center space-x-3 space-x-reverse">
             <div className="text-right hidden md:flex flex-col p-4">
               <h1 className="text-lg font-bold text-red-600">
-                الملحقية الثقافية بسفارة الجمهورية اليمنية - موسكو
+                {t("navbar.logo.title")}
               </h1>
-              <p className="text-sm text-red-400 ">
-                Культурный отдел (Посольство Республики Йемен в Москве)
+              <p className="text-sm text-red-400">
+                {t("navbar.logo.subtitle")}
               </p>
             </div>
-            <img src="/Yemen.png" alt="Logo" className="h-12 w-auto " />
+            <img src="/Yemen.png" alt="Logo" className="h-12 w-auto" />
+          </div>
+
+          {/* Language Selector */}
+          <div className="relative">
+            <button
+              className="text-red-700 px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-200 focus:outline-none"
+              onClick={() => setIsLanguageMenuOpen(!isLanguageMenuOpen)}
+            >
+              {i18n.language.toUpperCase()}
+            </button>
+            {isLanguageMenuOpen && (
+              <div className="absolute right-0 mt-2 w-28 bg-white rounded-md shadow-lg">
+                {languages.map((lang) => (
+                  <button
+                    key={lang.code}
+                    onClick={() => changeLanguage(lang.code)}
+                    className="block w-full px-4 py-2 text-sm text-left text-gray-700 hover:bg-gray-100"
+                  >
+                    {lang.name}
+                  </button>
+                ))}
+              </div>
+            )}
           </div>
 
           {/* Burger Menu Icon */}
           <button
-            title="title"
+            title="menu"
             className="md:hidden text-red-600 focus:outline-none"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
@@ -69,7 +106,7 @@ const Navbar: React.FC = () => {
           className={`md:flex md:justify-center md:items-center bg-gray-100 md:static md:bg-transparent ${isMenuOpen ? "block" : "hidden"
             }`}
         >
-          <div className="flex flex-col md:flex-row md:space-x-4 md:space-x-reverse py-2 md:py-0">
+          <div className="flex flex-col md:flex-row gap-4 py-2 md:py-0">
             {menuItems.map((item) => (
               <Link
                 key={item.id}
@@ -89,20 +126,8 @@ const Navbar: React.FC = () => {
           </div>
         </div>
       </nav>
-
     </div>
   );
 };
 
 export default Navbar;
-
-// {/* Hero Section */}
-// <div className="flex justify-between items-center bg-slate-400 w-full px-4 py-2 mt-20">
-//   {/* Left-Aligned Text */}
-//   <p className="text-white text-base font-bold">
-//     الملحقية الثقافية بسفارة الجمهورية اليمنية - موسكو
-//   </p>
-
-//   {/* Right-Aligned Dynamic Title */}
-//   <p className="text-white text-base">{selectedTitle}</p>
-// </div>

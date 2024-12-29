@@ -8,7 +8,7 @@ import Contact from "../../components/Contact";
 
 const AlMoulhaqia: React.FC = () => {
   return (
-    <div dir="rtl">
+    <div>
       <Boffer />
       <About />
       <Sections />

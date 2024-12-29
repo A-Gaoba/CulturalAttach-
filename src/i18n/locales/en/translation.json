@@ -1,0 +1,41 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Online Services",
+    "activities": "Cultural Activities",
+    "announcements": "Announcements",
+    "contact": "Contact Us",
+    "logo": {
+      "title": "Cultural Section of the Yemeni Embassy - Moscow",
+      "subtitle": "Cultural Office (Embassy of Yemen in Moscow)"
+    }
+  },
+  "hero": {
+    "title": "Official website of the Cultural Attaché of Yemen in Moscow",
+    "description": "Provides comprehensive and accurate information for all Yemeni students in Russia.",
+    "read_more": "Read More"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "address": "Address",
+    "address_value": "Yemeni Embassy in Moscow",
+    "email": "Email",
+    "phone": "Phone",
+    "whatsapp": "WhatsApp",
+    "whatsapp_message": "Send Message"
+  },
+  "footer": {
+    "title_part_1": "Join",
+    "title_part_2": "students",
+    "title_part_3": "to get the latest news",
+    "description": "Subscribe to our newsletter to receive the latest news and important announcements for students.",
+    "email_placeholder": "studentname@gmail.com",
+    "subscribe_button": "Subscribe",
+    "rights_reserved": "All rights reserved."
+  },
+  "boffer": {
+    "title": "Cultural Attaché",
+    "description": "Cultural Affairs Management for Students Studying Abroad"
+  }
+}

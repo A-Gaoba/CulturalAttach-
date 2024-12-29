@@ -9,6 +9,8 @@ import Loading from "./components/Loading";
 import OnlineServices from "./pages/OnlineServices/OnlineServices";
 import { FaArrowUp } from "react-icons/fa";
 import Contact from "./components/Contact";
+import SetDirection from "./components/SetDirection";
+
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -46,6 +48,7 @@ function App() {
   return (
     <div>
       <Router>
+        <SetDirection />
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
