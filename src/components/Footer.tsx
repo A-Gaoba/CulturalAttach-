@@ -2,7 +2,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 
 const Footer: React.FC = () => {
-  const { t } = useTranslation(); // Hook to get translation function
+  const { t } = useTranslation(); 
 
   return (
     <footer className="py-4 overflow-hidden">

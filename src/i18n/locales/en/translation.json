@@ -37,5 +37,11 @@
   "boffer": {
     "title": "Cultural Attaché",
     "description": "Cultural Affairs Management for Students Studying Abroad"
+  },
+  "about": {
+    "title": "About the Cultural Attaché",
+    "description": "The Cultural Attaché aims to support students and researchers by providing comprehensive educational and academic services, and enhancing collaboration between educational and cultural institutions to create an environment that encourages excellence and creativity.",
+    "contact": "Contact Us",
+    "alt": "About the Cultural Attaché"
   }
 }

@@ -2,6 +2,7 @@
 import React from "react";
 import "tailwindcss/tailwind.css";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 interface Slide {
   id: number;
@@ -29,12 +30,12 @@ const HeroSlider: React.FC<HeroSliderProps> = ({ slide }) => {
         <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/30 flex flex-col justify-center items-center gap-4 text-center text-white px-6">
           <h2 className="sm:text-5xl md:text-5xl lg:text-6xl font-bold mt-16 md:mt-40 w-[70%]">{slide.title}</h2>
           <p className="text-sm sm:text-lg md:text-xl lg:text-2xl max-w-2xl">{slide.description}</p>
-          <a
-            href="/almoulhaqia"
+          <Link
+            to="/almoulhaqia"
             className="mt-6 inline-block px-6 py-3 bg-red-600 text-white text-lg rounded-full hover:bg-red-700 transition duration-300"
           >
             {t("hero.read_more")}
-          </a>
+          </Link>
         </div>
       </div>
     </div>
