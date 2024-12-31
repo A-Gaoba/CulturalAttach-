@@ -20,8 +20,8 @@ const Navbar: React.FC = () => {
   ];
 
   const languages = [
-    { code: "en", name: "English" },
     { code: "ar", name: "العربية" },
+    { code: "en", name: "English" },
     { code: "ru", name: "Русский" },
   ];
 
