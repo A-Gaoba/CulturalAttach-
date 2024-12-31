@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { FaGlobe } from "react-icons/fa";
+
 
 const Navbar: React.FC = () => {
   const { t, i18n } = useTranslation();
@@ -47,12 +49,13 @@ const Navbar: React.FC = () => {
           </div>
 
           {/* Language Selector */}
-          <div className="relative">
+          <div className={`relative ${i18n.language === "ar" ? "right-20" : "left-20"} z-10 bg-red-500 rounded-md flex justify-center left-20`}>
             <button
-              className="text-red-700 px-3 py-2 rounded-md text-sm font-medium hover:bg-gray-200 focus:outline-none"
+              title="language name"
+              className="text-white md:px-3 md:py-2 p-4 rounded-md text-sm font-medium hover:text-black hover:bg-gray-200 focus:outline-none"
               onClick={() => setIsLanguageMenuOpen(!isLanguageMenuOpen)}
             >
-              {i18n.language.toUpperCase()}
+              <FaGlobe />
             </button>
             {isLanguageMenuOpen && (
               <div className="absolute right-0 mt-2 w-28 bg-white rounded-md shadow-lg">
@@ -60,7 +63,7 @@ const Navbar: React.FC = () => {
                   <button
                     key={lang.code}
                     onClick={() => changeLanguage(lang.code)}
-                    className="block w-full px-4 py-2 text-sm text-left text-gray-700 hover:bg-gray-100"
+                    className="block w-full px-4 py-2 text-sm text-left text-gray-700 hover:bg-gray-200"
                   >
                     {lang.name}
                   </button>
