@@ -1,51 +1,47 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 export const Sections: React.FC = () => {
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const { t } = useTranslation();
 
   const sections = [
     {
-      title: "المستشار الثقافي",
-      description: "يقوم بإدارة الشؤون الثقافية والإشراف على تحقيق أهداف الملحقية.",
-      iconPath: "M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z",
+      title: t('sections.cultural_advisor.title'),
+      description: t('sections.cultural_advisor.description'),
+      iconPath: 'M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z',
     },
     {
-      title: "المستشار الثقافي المساعد للشؤون المالية",
-      description:
-        "مسؤول عن الإشراف المالي وتقديم الدعم في إدارة الموارد المالية.",
-      iconPath: "M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z",
+      title: t('sections.assistant_financial_advisor.title'),
+      description: t('sections.assistant_financial_advisor.description'),
+      iconPath: 'M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z',
     },
     {
-      title: "الشؤون الأكاديمية",
-      description:
-        "تتولى مسؤولية متابعة الطلاب علميا واكاديميا والتواصل مع المؤسسات التعليمية.",
-      iconPath: "M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z",
+      title: t('sections.academic_affairs.title'),
+      description: t('sections.academic_affairs.description'),
+      iconPath: 'M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z',
     },
     {
-      title: "العلاقات العامة والإعلام",
-      description:
-        "يتولى كل ما يتعلق بالانشطة الثقافية والتنسيق مع الجامعات والجهات ذات العلاقة والخدمات الارشاديه والتوعيه للطلاب.",
-      iconPath: "M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z",
+      title: t('sections.public_relations.title'),
+      description: t('sections.public_relations.description'),
+      iconPath: 'M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z',
     },
     {
-      title: "تقنيات المعلومات",
-      description:
-        "يتولى كلما تعلق بانشاء البنية التقنية للملحقية والشبكة الداخلية بالاضافة الى الموقع الالكتروني للملحقية على شبكة الانترنت والخدمات الالكترونية المتعددة.",
-      iconPath: "M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z",
+      title: t('sections.it.title'),
+      description: t('sections.it.description'),
+      iconPath: 'M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z',
     },
     {
-      title: "السكرتارية",
-      description:
-        "يتولى كل ما يتعلق بالبريد والارشفة ومخاطبة الجامعات وغيرها من مهام السكرتارية المتعارف عليها.",
-      iconPath: "M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z",
+      title: t('sections.secretary.title'),
+      description: t('sections.secretary.description'),
+      iconPath: 'M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z',
     },
   ];
 
   return (
     <section className="p-4 relative">
-
       <div className="p-4 md:p-6 lg:p-8 w-full max-w-7xl px-4 md:px-5 lg:px-5 mx-auto">
-        <h1 className="text-2xl font-bold text-black mb-6">اقسام الملحقية</h1>
+        <h1 className="text-2xl font-bold text-black mb-6">{t('sections.title')}</h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
           {sections.map((section, index) => (
             <div
@@ -82,6 +78,5 @@ export const Sections: React.FC = () => {
         </div>
       </div>
     </section>
-
   );
 };
