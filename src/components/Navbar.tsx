@@ -49,7 +49,7 @@ const Navbar: React.FC = () => {
           </div>
 
           {/* Language Selector */}
-          <div className={`relative ${i18n.language === "ar" ? "right-20" : "left-20"} z-10 bg-red-500 rounded-md flex justify-center left-20`}>
+          <div className={`relative top-0 right-0 left-0 ${i18n.language === "ar" ? "right-20" : "left-20"} z-10 bg-red-500 rounded-md flex justify-center left-20`}>
             <button
               title="language name"
               className="text-white md:px-3 md:py-2 p-4 rounded-md text-sm font-medium hover:text-black hover:bg-gray-200 focus:outline-none"
