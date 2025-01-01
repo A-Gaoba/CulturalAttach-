@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { FaGlobe } from "react-icons/fa";
+import { LiaLanguageSolid } from "react-icons/lia";
 
 
 const Navbar: React.FC = () => {
@@ -31,7 +31,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <div dir={i18n.language === "ar" ? "rtl" : "ltr"} className="relative z-10">
+    <div dir="ltr" className="relative z-10">
       {/* Navbar Section */}
       <nav className="shadow w-full p-2 md:pb-4 pb-1 border-b-2">
         <div className="flex justify-between md:justify-center md:items-center px-4 py-3 md:py-4 md:px-6">
@@ -49,21 +49,20 @@ const Navbar: React.FC = () => {
           </div>
 
           {/* Language Selector */}
-          <div className={`relative ${i18n.language === "ar" ? "right-20 ml-8 md:ml-0" : "left-20"} z-10 bg-red-500 rounded-md flex justify-center left-20`}>
+          <div className={`relative z-10  rounded-md flex justify-center md:left-2 left-24`}>
             <button
               title="language name"
-              className="text-white md:px-3 md:py-2 p-4 rounded-md text-sm font-medium hover:text-black hover:bg-gray-200 focus:outline-none"
               onClick={() => setIsLanguageMenuOpen(!isLanguageMenuOpen)}
             >
-              <FaGlobe />
+              <LiaLanguageSolid color="#dc2626" size="22px"/>
             </button>
             {isLanguageMenuOpen && (
-              <div className="absolute right-0 mt-2 w-28 bg-white rounded-md shadow-lg">
+              <div className="absolute right-0 mt-2 w-28 bg-white rounded-md shadow-lg z-20">
                 {languages.map((lang) => (
                   <button
                     key={lang.code}
                     onClick={() => changeLanguage(lang.code)}
-                    className="block w-full px-4 py-2 text-sm text-left text-gray-700 hover:bg-gray-200"
+                    className="block w-full px-4 py-2 text-sm text-left text-gray-700 hover:bg-red-200"
                   >
                     {lang.name}
                   </button>

@@ -112,5 +112,25 @@
       "title": "Public Relations and Media",
       "bio": "Biography of Dr. Ahmed Al-Maglis."
     }
+  },
+  "culturalMagazine": {
+    "title": "Cultural Magazine",
+    "description": "Read the latest edition of the Cultural Magazine.",
+    "iframeTitle": "Cultural Magazine"
+  },
+  "culturalActivities": {
+    "title": "Cultural Activities and Events"
+  },
+  "culturalWeek": {
+    "title": "Cultural Week",
+    "description": "Details about the upcoming events of the cultural week."
+  },
+  "officialEvents": {
+    "title": "Official Events",
+    "description": "A list of official cultural events for students."
+  },
+  "imageGallery": {
+    "title": "Images",
+    "description": "Gallery of the Cultural Attaché's activities."
   }
 }

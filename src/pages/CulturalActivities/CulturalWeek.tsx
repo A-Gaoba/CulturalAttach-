@@ -1,9 +1,13 @@
+import React from 'react';
+import { useTranslation } from 'react-i18next';
 
-const CulturalWeek = () => {
+const CulturalWeek: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="mb-4">
-      <h3 className="text-lg font-semibold">الأسبوع الثقافي</h3>
-      <p>تفاصيل حول الفعاليات القادمة للأسبوع الثقافي.</p>
+      <h3 className="text-lg font-semibold">{t('culturalWeek.title')}</h3>
+      <p>{t('culturalWeek.description')}</p>
     </div>
   );
 };

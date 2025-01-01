@@ -1,8 +1,10 @@
 import { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 
 const ImageGallery = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState<number | null>(null);
+  const { t } = useTranslation();
 
   const images = [
     "https://plus.unsplash.com/premium_photo-1674156433236-2338418ec4d9?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -38,10 +40,10 @@ const ImageGallery = () => {
   const handleTouchStart = (e: React.TouchEvent) => {
     const touchStart = e.touches[0].clientX;
 
-    const handleSwipe = (e: TouchEvent) => { // Use native TouchEvent here
+    const handleSwipe = (e: TouchEvent) => {
       const touchEnd = e.touches[0].clientX;
-      if (touchStart - touchEnd > 50) nextImage(); // Swipe left
-      if (touchEnd - touchStart > 50) prevImage(); // Swipe right
+      if (touchStart - touchEnd > 50) nextImage();
+      if (touchEnd - touchStart > 50) prevImage();
       e.stopPropagation();
       e.preventDefault();
     };
@@ -56,8 +58,8 @@ const ImageGallery = () => {
   return (
     <div className="mb-4">
       <div>
-        <h3 className="text-lg font-semibold">الصور</h3>
-        <p>معرض أنشطة الملحق الثقافي.</p>
+        <h3 className="text-lg font-semibold">{t('imageGallery.title')}</h3>
+        <p>{t('imageGallery.description')}</p>
       </div>
       <div className="container mx-auto px-5 py-2 lg:px-32 lg:pt-12">
         <div className="-m-1 flex flex-wrap md:-m-2">

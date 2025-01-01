@@ -1,16 +1,21 @@
-const مجلة_ثقافية = () => {
+import React from 'react';
+import { useTranslation } from 'react-i18next';
+
+const CulturalMagazine: React.FC = () => {
+  const { t } = useTranslation();
+
   return (
     <div className="mb-4">
-      <h3 className="text-lg font-semibold">المجلة الثقافية</h3>
-      <p className="p-2">اقرأ أحدث إصدار من المجلة الثقافية.</p>
+      <h3 className="text-lg font-semibold">{t('culturalMagazine.title')}</h3>
+      <p className="p-2">{t('culturalMagazine.description')}</p>
       <iframe
         src="/book.pdf"
         width="100%"
         height="600px"
-        title="المجلة الثقافية"
+        title={t('culturalMagazine.iframeTitle')}
       />
     </div>
   );
 };
 
-export default مجلة_ثقافية;
+export default CulturalMagazine;
