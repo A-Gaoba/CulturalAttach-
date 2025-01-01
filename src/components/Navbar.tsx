@@ -31,7 +31,7 @@ const Navbar: React.FC = () => {
   };
 
   return (
-    <div dir="ltr" className="relative z-10">
+    <div dir="ltr" className="sticky top-0 z-10 bg-white shadow-md">
       {/* Navbar Section */}
       <nav className="shadow w-full p-2 md:pb-4 pb-1 border-b-2">
         <div className="flex justify-between md:justify-center md:items-center px-4 py-3 md:py-4 md:px-6">
@@ -54,7 +54,7 @@ const Navbar: React.FC = () => {
               title="language name"
               onClick={() => setIsLanguageMenuOpen(!isLanguageMenuOpen)}
             >
-              <LiaLanguageSolid color="#dc2626" size="22px"/>
+              <LiaLanguageSolid color="#dc2626" size="22px" />
             </button>
             {isLanguageMenuOpen && (
               <div className="absolute right-0 mt-2 w-28 bg-white rounded-md shadow-lg z-20">

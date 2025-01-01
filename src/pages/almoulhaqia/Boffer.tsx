@@ -29,7 +29,7 @@ const Boffer: React.FC = () => {
         </div>
 
         {/* Title and text */}
-        <div className={`relative ${isArabic ? 'text-right md:pr-4 pr-1 md:pt-6' : 'text-left md:pl-4 pl-1 md:pt-6'} z-10`}>
+        <div className={`relative ${isArabic ? 'text-right md:pr-4 pr-1 md:pt-6' : 'text-left md:pl-4 pl-1 md:pt-6'}`}>
           <h1 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-bold text-black mb-2">
             {t("boffer.title")}
           </h1>
