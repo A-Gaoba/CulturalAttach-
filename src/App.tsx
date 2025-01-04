@@ -7,9 +7,12 @@ import Almoulhaqia from "./pages/almoulhaqia";
 import CulturalActivities from "./pages/CulturalActivities";
 import Loading from "./components/Loading";
 import OnlineServices from "./pages/OnlineServices/OnlineServices";
+import AnnouncementsAndNotifications from "./pages/addsAndNotifications/Index";
 import { FaArrowUp } from "react-icons/fa";
 import Contact from "./components/Contact";
 import SetDirection from "./components/SetDirection";
+import NewsPage from "./pages/news/NewsPage";
+import NewsDetails from "./pages/news/NewsDetails";
 
 
 function App() {
@@ -55,6 +58,9 @@ function App() {
           <Route path="/almoulhaqia" element={<Almoulhaqia />} />
           <Route path="/services" element={<OnlineServices />} />
           <Route path="/activities" element={<CulturalActivities />} />
+          <Route path="/news" element={<NewsPage />} />
+          <Route path="/news/:id" element={<NewsDetails />} />
+          <Route path="/announcements" element={<AnnouncementsAndNotifications />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />

@@ -3,38 +3,38 @@ import { FaEnvelope, FaPhoneAlt, FaWhatsapp, FaMapMarkerAlt } from "react-icons/
 import { useTranslation } from "react-i18next";
 
 const Contact: React.FC = () => {
-  const { t } = useTranslation(); 
+  const { t } = useTranslation();
 
   const contactInfo = [
     {
       id: 1,
       icon: <FaMapMarkerAlt className="text-3xl flex-shrink-0" />,
-      label: t("contact.address"), // Dynamic translation for label
-      value: t("contact.address_value"), // Dynamic translation for value
+      label: t("contact.address"),
+      value: t("contact.address_value"),
       isLink: false,
     },
     {
       id: 2,
       icon: <FaEnvelope className="text-3xl flex-shrink-0" />,
-      label: t("contact.email"), // Dynamic translation for label
-      value: "mailto:someone@example.com",
-      displayValue: "someone@example.com",
+      label: t("contact.email"),
+      value: "mailto:mulhakia_rus@hotmail.com",
+      displayValue: "mulhakia_rus@hotmail.com",
       isLink: true,
     },
     {
       id: 3,
       icon: <FaPhoneAlt className="text-3xl flex-shrink-0" />,
-      label: t("contact.phone"), // Dynamic translation for label
-      value: "tel:+1234567890",
-      displayValue: "+1 234 567 890",
+      label: t("contact.phone"),
+      value: "tel:+7 499-246-31-06",
+      displayValue: "+7 499-246-31-06",
       isLink: true,
     },
     {
       id: 4,
       icon: <FaWhatsapp className="text-3xl flex-shrink-0" />,
-      label: t("contact.whatsapp"), // Dynamic translation for label
-      value: "https://wa.me/11234567890",
-      displayValue: t("contact.whatsapp_message"), // Dynamic translation for "Send Message"
+      label: t("contact.whatsapp"),
+      value: "https://wa.me/+79686257772",
+      displayValue: t("contact.whatsapp_message"),
       isLink: true,
     },
   ];
@@ -42,14 +42,14 @@ const Contact: React.FC = () => {
   return (
     <div className="max-w-7xl mx-auto p-6">
       <h2 className="text-center text-4xl font-extrabold text-gray-900 mb-12">
-        {t("contact.title")} {/* Dynamic translation for section title */}
+        {t("contact.title")}
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         {/* Left Section: Map */}
         <div className="rounded-lg overflow-hidden shadow-lg">
           <iframe
-            src="https://yandex.com/map-widget/v1/?um=constructor%3A9EjRFueXqXH1XFOuMEdI9UBu6J0JgfL9&source=constructor&text=%D8%A7%D9%84%D8%B3%D9%81%D8%A7%D8%B1%D8%A9+%D8%A7%D9%84%D8%B9%D8%B1%D8%A7%D9%82%D9%8A%D8%A9+%D9%81%D9%8A+%D9%85%D9%88%D8%B3%D9%83%D9%88,+Pogodinskaya+Ulitsa+16+Moskva,+Russia,+Moscow,+119435"
+            src="https://yandex.com/map-widget/v1/?ll=37.615713%2C55.727612&z=16&l=map&text=Mytnaya%20Street%2C%203%2C%20Moscow%2C%20119049"
             className="w-full h-96 md:h-full border-0"
             allowFullScreen={true}
             loading="lazy"
@@ -68,7 +68,7 @@ const Contact: React.FC = () => {
                     {item.displayValue}
                   </a>
                 ) : (
-                  <p className="text-gray-600">{item.value}</p>
+                  <p className="text-gray-600 " >{item.value}</p>
                 )}
               </div>
             </div>
