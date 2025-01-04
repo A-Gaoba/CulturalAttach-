@@ -26,7 +26,7 @@ const Contact: React.FC = () => {
       icon: <FaPhoneAlt className="text-3xl flex-shrink-0" />,
       label: t("contact.phone"),
       value: "tel:+7 499-246-31-06",
-      displayValue: "+7 499-246-31-06",
+      displayValue: "499-246-31-06",
       isLink: true,
     },
     {
@@ -53,7 +53,7 @@ const Contact: React.FC = () => {
             className="w-full h-96 md:h-full border-0"
             allowFullScreen={true}
             title="Map showing Mytnaya Street, 3, Moscow, 119049"
-            // loading="lazy"
+          // loading="lazy"
           ></iframe>
         </div>
 
