@@ -52,7 +52,8 @@ const Contact: React.FC = () => {
             src="https://yandex.com/map-widget/v1/?ll=37.615713%2C55.727612&z=16&l=map&text=Mytnaya%20Street%2C%203%2C%20Moscow%2C%20119049"
             className="w-full h-96 md:h-full border-0"
             allowFullScreen={true}
-            loading="lazy"
+            title="Map showing Mytnaya Street, 3, Moscow, 119049"
+            // loading="lazy"
           ></iframe>
         </div>
 
