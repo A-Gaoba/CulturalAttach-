@@ -10,7 +10,7 @@ const Contact: React.FC = () => {
       id: 1,
       icon: <FaMapMarkerAlt className="text-3xl flex-shrink-0" />,
       label: t("contact.address"),
-      value: t("contact.address_value"),
+      value: t("Mytnaya Street, 3, Moscow, 119049"),
       isLink: false,
     },
     {
