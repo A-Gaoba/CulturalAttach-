@@ -16,7 +16,7 @@ const NewsDetails: React.FC = () => {
   }
 
   return (
-    <div className="container mx-auto p-6 lg:flex lg:gap-8">
+    <div dir="rtl" className="container mx-auto p-6 lg:flex lg:gap-8">
       {/* Main Content */}
       <article className="lg:flex-1">
         <img
