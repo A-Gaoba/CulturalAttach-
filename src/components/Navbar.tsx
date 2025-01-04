@@ -47,37 +47,37 @@ const Navbar: React.FC = () => {
           </div>
 
           {/* Burger Menu and Language Selector */}
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center space-x-4 relative">
             <button
               title="language name"
               onClick={() => setIsLanguageMenuOpen(!isLanguageMenuOpen)}
-              className="text-red-600 text-lg flex items-center justify-center"
+              className="text-red-600 text-lg flex items-center justify-center relative"
             >
               {i18n.language === "ar" && (
                 <img
                   src="/flags/sa.png"
                   alt="Saudi Flag"
-                  className="max-w-6 object-cover "
+                  className="max-w-6 object-cover"
                 />
               )}
               {i18n.language === "en" && (
                 <img
                   src="/flags/en.png"
                   alt="UK Flag"
-                  className="max-w-6 h-4 object-cover "
+                  className="max-w-6 h-4 object-cover"
                 />
               )}
               {i18n.language === "ru" && (
                 <img
                   src="/flags/ru.png"
                   alt="Russia Flag"
-                  className="max-w-6 object-cover "
+                  className="max-w-6 object-cover"
                 />
               )}
             </button>
 
             {isLanguageMenuOpen && (
-              <div className="absolute right-14 md:right-[21rem] mt-20 w-28 bg-white rounded-md shadow-lg z-20">
+              <div className="absolute right-6 md:right-0 top-full w-28 bg-white rounded-md shadow-lg z-20">
                 {languages.map((lang) => (
                   <button
                     key={lang.code}
@@ -120,6 +120,7 @@ const Navbar: React.FC = () => {
               </svg>
             </button>
           </div>
+
         </div>
 
         {/* Navigation Menu */}
