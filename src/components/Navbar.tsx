@@ -18,9 +18,9 @@ const Navbar: React.FC = () => {
   ];
 
   const languages = [
-    { code: "ar", name: "العربية" },
-    { code: "en", name: "English" },
-    { code: "ru", name: "Русский" },
+    { code: "ar", name: "العربية", flag: "flag-icon-sa" },
+    { code: "en", name: "English", flag: "flag-icon-gb" },
+    { code: "ru", name: "Русский", flag: "flag-icon-ru" },
   ];
 
   const changeLanguage = (languageCode: string) => {
@@ -53,27 +53,9 @@ const Navbar: React.FC = () => {
               onClick={() => setIsLanguageMenuOpen(!isLanguageMenuOpen)}
               className="text-red-600 text-lg flex items-center justify-center relative"
             >
-              {i18n.language === "ar" && (
-                <img
-                  src="/flags/sa.png"
-                  alt="Saudi Flag"
-                  className="max-w-6 object-cover"
-                />
-              )}
-              {i18n.language === "en" && (
-                <img
-                  src="/flags/en.png"
-                  alt="UK Flag"
-                  className="max-w-6 h-4 object-cover"
-                />
-              )}
-              {i18n.language === "ru" && (
-                <img
-                  src="/flags/ru.png"
-                  alt="Russia Flag"
-                  className="max-w-6 object-cover"
-                />
-              )}
+              <span
+                className={`flag-icon ${languages.find((lang) => lang.code === i18n.language)?.flag} text-xl`}
+              ></span>
             </button>
 
             {isLanguageMenuOpen && (
