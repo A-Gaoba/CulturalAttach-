@@ -43,7 +43,7 @@ const Navbar: React.FC = () => {
       }}
     >
       {/* Navbar Section */}
-      <nav className="bg-black/40 w-full p-2 md:pb-4 pb-1 border-b-2 text-white">
+      <nav className="bg-black/40 w-full py-2 md:pb-4 pb-1 border-b-2 text-white">
 
         <div className="flex justify-between md:justify-center gap-8 items-center px-4 py-3 md:py-4 md:px-6">
           {/* Logo */}
@@ -60,7 +60,7 @@ const Navbar: React.FC = () => {
           </div>
 
           {/* Burger Menu and Language Selector */}
-          <div className="flex items-center space-x-4 relative">
+          <div className="flex items-center space-x-4 relative ">
             <button
               title="language name"
               onClick={() => setIsLanguageMenuOpen(!isLanguageMenuOpen)}
@@ -120,11 +120,11 @@ const Navbar: React.FC = () => {
 
         {/* Navigation Menu */}
         <div
-          className={`md:flex md:justify-center md:items-center bg-gray-100 md:static md:bg-transparent ${isMenuOpen ? "block" : "hidden"
+          className={`md:flex md:justify-center md:items-center p-2 md:p-0 bg-gray-100 md:static md:bg-transparent ${isMenuOpen ? "block" : "hidden"
             }`}
         >
           {/* <div className="flex flex-col md:flex-row-reverse "> */}
-          <div className={`flex flex-col md:flex-row gap-4 py-2 md:py-0 ${i18n.language === "ar" ? "md:flex-row-reverse" : "md:flex-row"
+          <div className={`flex flex-col md:flex-row md:gap-4 gap-2 py-2 md:py-0 ${i18n.language === "ar" ? "md:flex-row-reverse" : "md:flex-row"
             }`}>
             {menuItems.map((item) => (
               <Link
