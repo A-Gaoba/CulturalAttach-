@@ -12,25 +12,37 @@ const HomePage: React.FC = () => {
     {
       id: 1,
       image: "/hero1.jpg",
-      title: "",
+      title: "SANA'A",
       description: "",
     },
     {
       id: 2,
       image: "/hero2.jpg",
-      title: "",
+      title: "SHIBAM",
       description: "",
     },
     {
       id: 3,
       image: "/hero3.jpg",
-      title: "",
+      title: "OLD SANA'A",
       description: "",
     },
     {
       id: 4,
-      image: "/image1.webp",
+      image: "/hero4.jpg",
       title: "",
+      description: "",
+    },
+    {
+      id: 5,
+      image: "/hero5.jpg",
+      title: " SOCOTRA ISLAND",
+      description: "",
+    },
+    {
+      id: 6,
+      image: "/hero6.jpg",
+      title: "DAR ALHAJAR",
       description: "",
     },
   ];
