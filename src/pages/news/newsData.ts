@@ -70,7 +70,7 @@ export const newsData = [
 
 نتمنى للجميع التوفيق في التقديم والنجاح الأكاديمي.
   `,
-    image: "/icon.jpg",
+    image: "/news/news3.jpg",
     date: "١ يناير ٢٠٢٥",
   },
 ];
