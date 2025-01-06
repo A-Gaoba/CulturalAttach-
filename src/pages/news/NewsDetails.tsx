@@ -25,7 +25,8 @@ const NewsDetails: React.FC = () => {
           className="rounded-lg mb-6 w-full h-80 object-cover shadow-md"
         />
         <h1 className="text-3xl font-extrabold text-gray-900 mb-4">{news.title}</h1>
-        <p className="text-gray-700 leading-loose whitespace-pre-line">{news.content}</p>
+        <p className="text-gray-700 leading-loose whitespace-pre-line break-words">{news.content}</p>
+        {/* <p className="text-gray-700 leading-loose whitespace-pre-line">{news.content}</p> */}
       </main>
 
       {/* Related News Section */}
