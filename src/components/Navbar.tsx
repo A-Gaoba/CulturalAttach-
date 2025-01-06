@@ -36,19 +36,25 @@ const Navbar: React.FC = () => {
   }, [i18n]);
 
   return (
-    <div dir="ltr" className="sticky md:relative top-0 z-10 bg-white shadow-md">
+    <div dir="ltr"
+      className="sticky md:relative top-0 z-10 bg-cover bg-center"
+      style={{
+        backgroundImage: "url('/bg.jpeg')",
+      }}
+    >
       {/* Navbar Section */}
-      <nav className="shadow w-full p-2 md:pb-4 pb-1 border-b-2">
+      <nav className="bg-black/40 w-full p-2 md:pb-4 pb-1 border-b-2 text-white">
+
         <div className="flex justify-between md:justify-center gap-8 items-center px-4 py-3 md:py-4 md:px-6">
           {/* Logo */}
           <img src="/Yemen.png" alt="Logo" className="md:h-12 h-8 w-auto" />
 
           {/* Title and Subtitle */}
           <div className="text-center flex flex-col items-center">
-            <h1 className="text-xs md:text-xl font-bold text-red-600 md:w-auto">
+            <h1 className="text-xs md:text-xl font-bold text-white md:w-auto">
               {t("navbar.logo.title")}
             </h1>
-            <p className="text-xs hidden md:flex text-red-400">
+            <p className="text-xs hidden md:flex mt-2 text-slate-200">
               {t("navbar.logo.subtitle")}
             </p>
           </div>
@@ -81,7 +87,7 @@ const Navbar: React.FC = () => {
 
             <button
               title="menu"
-              className="md:hidden text-red-600 focus:outline-none"
+              className="md:hidden text-white focus:outline-none"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               <svg
