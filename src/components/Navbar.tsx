@@ -7,6 +7,8 @@ const Navbar: React.FC = () => {
   const [selectedTitle, setSelectedTitle] = useState(t("navbar.home"));
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isLanguageMenuOpen, setIsLanguageMenuOpen] = useState(false);
+  const [currentFlag, setCurrentFlag] = useState("");
+
 
   const menuItems = [
     { id: 1, label: t("navbar.home"), title: t("navbar.home"), path: "/" },
@@ -26,13 +28,16 @@ const Navbar: React.FC = () => {
   const changeLanguage = (languageCode: string) => {
     i18n.changeLanguage(languageCode);
     localStorage.setItem("selectedLanguage", languageCode);
+    const selectedFlag = languages.find((lang) => lang.code === languageCode)?.flag || "";
+    setCurrentFlag(selectedFlag);
     setIsLanguageMenuOpen(false);
   };
+
   useEffect(() => {
-    const savedLanguage = localStorage.getItem("selectedLanguage");
-    if (savedLanguage && savedLanguage !== i18n.language) {
-      i18n.changeLanguage(savedLanguage);
-    }
+    const savedLanguage = localStorage.getItem("selectedLanguage") || i18n.language || "ar";
+    i18n.changeLanguage(savedLanguage);
+    const initialFlag = languages.find((lang) => lang.code === savedLanguage)?.flag || "flag-icon-sa";
+    setCurrentFlag(initialFlag);
   }, [i18n]);
 
   return (
@@ -66,9 +71,8 @@ const Navbar: React.FC = () => {
               onClick={() => setIsLanguageMenuOpen(!isLanguageMenuOpen)}
               className="text-red-600 text-lg flex items-center justify-center relative"
             >
-              <span
-                className={`flag-icon ${languages.find((lang) => lang.code === i18n.language)?.flag} text-xl`}
-              ></span>
+              <span className={`flag-icon ${currentFlag} text-xl`}></span>
+
             </button>
 
             {isLanguageMenuOpen && (
