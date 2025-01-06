@@ -55,7 +55,7 @@ const HeroSlider: React.FC<HeroSliderProps> = ({ slides }) => {
           <img
             src={slide.image}
             alt={slide.title}
-            className="w-full h-full object-cover"
+            className="w-full h-full md:object-fill object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/30 to-black/30 flex flex-col justify-center items-center gap-4 text-center text-white px-6">
             <h2 className="text-4xl font-bold">{slide.title}</h2>

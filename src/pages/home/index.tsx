@@ -9,10 +9,16 @@ import { Link } from "react-router-dom";
 const HomePage: React.FC = () => {
   const { t } = useTranslation();
   const slides = [
+    // {
+    //   id: 1,
+    //   image: "/hero1.jpg",
+    //   title: "SANA'A",
+    //   description: "",
+    // },
     {
       id: 1,
-      image: "/hero1.jpg",
-      title: "SANA'A",
+      image: "/hero3.jpg",
+      title: "OLD SANA'A",
       description: "",
     },
     {
@@ -22,15 +28,9 @@ const HomePage: React.FC = () => {
       description: "",
     },
     {
-      id: 3,
-      image: "/hero3.jpg",
-      title: "OLD SANA'A",
-      description: "",
-    },
-    {
       id: 4,
       image: "/hero4.jpg",
-      title: "",
+      title: "TAWILA TANKS",
       description: "",
     },
     {
@@ -43,6 +43,12 @@ const HomePage: React.FC = () => {
       id: 6,
       image: "/hero6.jpg",
       title: "DAR ALHAJAR",
+      description: "",
+    },
+    {
+      id: 7,
+      image: "/hero7.jpg",
+      title: "TAIZ-CASTLE",
       description: "",
     },
   ];
