@@ -103,7 +103,7 @@ const HeroSlider: React.FC<HeroSliderProps> = ({ slides }) => {
               className={`w-3 h-3 rounded-full border-2 ${
                 index === currentIndex
                   ? "bg-red-600 border-red-600"
-                  : "bg-gray-400 border-gray-400"
+                  : "bg-gray-200 border-gray-400"
               }`}
               aria-label={`Go to slide ${index + 1}`}
             ></button>
