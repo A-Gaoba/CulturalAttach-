@@ -1,5 +1,4 @@
 import React from "react";
-import Contact from "../../components/Contact";
 import HeroSlider from "./Hero";
 import { useTranslation } from "react-i18next";
 import NewsList from "../news/NewsList";
@@ -69,7 +68,7 @@ const HomePage: React.FC = () => {
           </Link>
         </div>
       </div>
-      <Contact />
+      {/* <Contact />  */}
     </div>
   );
 };

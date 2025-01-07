@@ -53,7 +53,7 @@ const Footer: React.FC = () => {
                 rel="noopener noreferrer"
                 className="text-blue-500 hover:underline"
               >
-                gaoba
+                Gaoba
               </a>
             </span>
             {t("footer.rights_reserved")}

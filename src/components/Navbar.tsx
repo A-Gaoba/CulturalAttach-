@@ -20,7 +20,7 @@ const Navbar: React.FC = () => {
   ];
 
   const languages = [
-    { code: "ar", name: "العربية", flag: "flag-icon-sa" },
+    { code: "ar", name: "العربية", flag: "flag-icon-ye" },
     { code: "en", name: "English", flag: "flag-icon-gb" },
     { code: "ru", name: "Русский", flag: "flag-icon-ru" },
   ];
@@ -36,19 +36,19 @@ const Navbar: React.FC = () => {
   useEffect(() => {
     const savedLanguage = localStorage.getItem("selectedLanguage") || i18n.language || "ar";
     i18n.changeLanguage(savedLanguage);
-    const initialFlag = languages.find((lang) => lang.code === savedLanguage)?.flag || "flag-icon-sa";
+    const initialFlag = languages.find((lang) => lang.code === savedLanguage)?.flag || "flag-icon-ye";
     setCurrentFlag(initialFlag);
   }, [i18n]);
 
   return (
     <div dir="ltr"
-      className="sticky md:relative top-0 z-10 bg-cover bg-center"
-      style={{
-        backgroundImage: "url('/bg.jpeg')",
-      }}
+      className="sticky md:relative top-0 z-10 bg-cover bg-center  max-w-7xl px-4 md:px-5 lg:px-5 mx-auto"
+      // style={{
+      //   backgroundImage: "url('/bg2.jpeg')",
+      // }}
     >
       {/* Navbar Section */}
-      <nav className="bg-black/40 w-full py-2 md:pb-4 pb-1 border-b-2 text-white">
+      <nav className="w-full py-2 md:pb-4 pb-1 border-b-2 text-white">
 
         <div className="flex justify-between md:justify-center gap-8 items-center px-4 py-3 md:py-4 md:px-6">
           {/* Logo */}
@@ -56,10 +56,10 @@ const Navbar: React.FC = () => {
 
           {/* Title and Subtitle */}
           <div className="text-center flex flex-col items-center">
-            <h1 className="text-xs md:text-xl font-bold text-white md:w-auto">
+            <h1 className="text-xs md:text-xl font-bold text-black md:w-auto">
               {t("navbar.logo.title")}
             </h1>
-            <p className="text-xs hidden md:flex mt-2 text-slate-200">
+            <p className="text-xs hidden md:flex mt-2 text-slate-600">
               {t("navbar.logo.subtitle")}
             </p>
           </div>
@@ -91,7 +91,7 @@ const Navbar: React.FC = () => {
 
             <button
               title="menu"
-              className="md:hidden text-white focus:outline-none"
+              className="md:hidden text-black focus:outline-none"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               <svg
