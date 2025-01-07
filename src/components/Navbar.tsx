@@ -42,7 +42,7 @@ const Navbar: React.FC = () => {
 
   return (
     <div dir="ltr"
-      className="sticky md:relative top-0 z-10 bg-cover bg-center  max-w-7xl px-4 md:px-5 lg:px-5 mx-auto"
+      className="sticky md:relative top-0 z-10 bg-cover bg-center  max-w-7xl px-4 md:px-5 lg:px-5 mx-auto bg-white"
       // style={{
       //   backgroundImage: "url('/bg2.jpeg')",
       // }}
