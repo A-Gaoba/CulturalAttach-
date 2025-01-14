@@ -7,7 +7,7 @@ const Registration = () => {
       </p>
       <div className="w-full overflow-hidden rounded-lg">
         <iframe
-          src="https://docs.google.com/forms/d/e/1FAIpQLSfLH2WsXVXUUcu3jJw9eeMCdY8wSBm9vXWSkLFrDJWr-2lFYA/viewform?embedded=true"
+          src="https://docs.google.com/forms/d/e/1FAIpQLSemywkmMs0GSmqmZ3BZtlRJBOljyNjGt5V294EEQJa3lqjw3A/viewform?usp=header"
           width="100%"
           height="600"
           frameBorder="0"

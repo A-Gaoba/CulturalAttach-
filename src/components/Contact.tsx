@@ -41,11 +41,11 @@ const Contact: React.FC = () => {
 
   return (
     <div className="max-w-7xl mx-auto p-6">
-      <h2 className="text-center text-4xl font-extrabold text-gray-900 mb-12">
+      {/* <h2 className="text-center text-4xl font-extrabold text-gray-900 mb-12">
         {t("contact.title")}
-      </h2>
+      </h2> */}
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12 border p-4">
         {/* Left Section: Map */}
         <div className="rounded-lg overflow-hidden shadow-lg">
           <iframe

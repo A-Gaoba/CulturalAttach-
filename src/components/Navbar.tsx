@@ -43,9 +43,9 @@ const Navbar: React.FC = () => {
   return (
     <div dir="ltr"
       className="sticky md:relative top-0 z-10 bg-cover bg-center  max-w-7xl px-4 md:px-5 lg:px-5 mx-auto bg-white"
-      // style={{
-      //   backgroundImage: "url('/bg2.jpeg')",
-      // }}
+    // style={{
+    //   backgroundImage: "url('/bg2.jpeg')",
+    // }}
     >
       {/* Navbar Section */}
       <nav className="w-full py-2 md:pb-4 pb-1 border-b-2 text-white">
@@ -56,8 +56,9 @@ const Navbar: React.FC = () => {
 
           {/* Title and Subtitle */}
           <div className="text-center flex flex-col items-center">
-            <h1 className="text-xs md:text-xl font-bold text-black md:w-auto">
-              {t("navbar.logo.title")}
+            <h1 className="text-md md:text-xl font-bold text-black md:w-auto">
+              الملحقية الثقافية اليمنية - موسكو
+
             </h1>
             <p className="text-xs hidden md:flex mt-2 text-slate-600">
               {t("navbar.logo.subtitle")}

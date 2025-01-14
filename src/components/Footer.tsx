@@ -2,7 +2,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 
 const Footer: React.FC = () => {
-  const { t } = useTranslation(); 
+  const { t } = useTranslation();
 
   return (
     <footer className="py-4 overflow-hidden">
@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
 
           {/* Content */}
           <div className="lg:h-full flex flex-col items-center text-center justify-center space-y-8 mx-auto max-w-2xl">
-            <h1 className="font-bold text-gray-900 dark:text-black text-4xl">
+            <h1 className="font-bold text-gray-900 dark:text-black text-2xl">
               {t("footer.title_part_1")}{" "}
               <span className="text-transparent bg-clip-text bg-gradient-to-bl from-red-500 to-black dark:from-red-400 dark:to-black">
                 500+ {t("footer.title_part_2")}
@@ -45,7 +45,7 @@ const Footer: React.FC = () => {
         <div className="text-sm">
           <hr />
           <p className="p-2">
-            © 2024 -{" "}
+            © 2025 -{" "}
             <span>
               <a
                 href="https://gaoba.vercel.app"
