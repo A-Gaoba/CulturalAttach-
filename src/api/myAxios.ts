@@ -10,7 +10,6 @@ const myAxios = axios.create({
 myAxios.interceptors.request.use(
 	(config) => {
 		const token = localStorage.getItem("token");
-		console.log(token)
 		if (token) {
 			const modifiedToken = token.slice(1, -1);
 			config.headers.Authorization = `Bearer ${modifiedToken}`;
