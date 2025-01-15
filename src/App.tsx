@@ -13,6 +13,8 @@ import Contact from "./components/Contact";
 import SetDirection from "./components/SetDirection";
 import NewsPage from "./pages/news/NewsPage";
 import NewsDetails from "./pages/news/NewsDetails";
+import Admin from "./pages/admin";
+import Login from "./pages/login";
 
 
 function App() {
@@ -62,6 +64,8 @@ function App() {
           <Route path="/news/:id" element={<NewsDetails />} />
           <Route path="/announcements" element={<AnnouncementsAndNotifications />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/admin" element={<Admin />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
         <Footer />
       </Router>
