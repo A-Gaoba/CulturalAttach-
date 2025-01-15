@@ -18,8 +18,8 @@ export const updateNews = async (news: News): Promise<News> => {
 	return response.data;
 };
 
-export const deleteNews = async (id: string): Promise<void> => {
-	await myAxios.delete(`/news/${id}`);
+export const deleteNews = async (_id: string | undefined): Promise<void> => {
+	await myAxios.delete(`/news/${_id}`);
 };
 
 export default function useNews() {

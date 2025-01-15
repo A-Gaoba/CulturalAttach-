@@ -4,7 +4,7 @@ import { News } from "../../../types";
 interface NewsListProps {
 	news: News[];
 	onEdit: (news: News) => void;
-	onDelete: (_id: string) => void;
+	onDelete: (_id: string | undefined) => void;
 }
 
 const NewsList: React.FC<NewsListProps> = ({ news, onEdit, onDelete }) => {

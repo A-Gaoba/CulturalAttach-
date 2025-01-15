@@ -14,7 +14,7 @@ const Admin: React.FC = () => {
 	useEffect(() => {
 		const token = localStorage.getItem("token");
 		if (!token) {
-			navigate("/"); // Navigate to the home page if no token is found
+			navigate("/");
 		}
 	}, [navigate]);
 
@@ -26,8 +26,8 @@ const Admin: React.FC = () => {
 		updateMutation.mutate(updatedNews);
 	};
 
-	const handleDeleteNews = (id: string) => {
-		deleteMutation.mutate(id);
+	const handleDeleteNews = (_id: string | undefined) => {
+		deleteMutation.mutate(_id);
 	};
 
 	if (getQuery.isLoading) return <div>Loading...</div>;
