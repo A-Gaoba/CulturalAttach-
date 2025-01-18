@@ -6,25 +6,17 @@ import { Link } from "react-router-dom";
 const NewsDetails: React.FC = () => {
 	const { getByIdQuery, getQuery } = useNews();
 	const { data: news } = getByIdQuery;
-	
-	// const [relatedNews, setRelatedNews] = useState([]);
-	// const fuseOptions = {
-	// 	keys: ["title"],
-	// 	threshold: 0.3, // Adjust the threshold for more strict matching
-	// 	distance: 100, // Adjust the distance for more strict matching
-	// 	includeScore: true, // Include the score in the results
-	// };
-	// useEffect(() => {
-	// 	if (getQuery.data) {
-	// 		const fuse = new Fuse(getByIdQuery.data, fuseOptions);
-	// 		const result = fuse.search(news[0].title).map(({ item }) => item);
-	// 		setRelatedNews(result);
-	// 	}
-	// }, []);
-
+	const { data: allNews, isLoading, isError } = getQuery;
 
 	if (!news) {
 		return <div className="flex justify-center items-center h-screen text-gray-700 text-lg">الخبر غير موجود.</div>;
+	}
+
+	if (isLoading) {
+		return <h1>Loading...</h1>;
+	}
+	if (isError) {
+		return <h1>Server error</h1>;
 	}
 
 	return (
@@ -40,7 +32,7 @@ const NewsDetails: React.FC = () => {
 			<aside className="mt-12 lg:mt-0 lg:w-1/3">
 				<h2 className="text-2xl font-bold text-gray-900 mb-6">أخبار ذات صلة</h2>
 				<ul className="space-y-6">
-					{getQuery.data.map((item) => (
+					{allNews && allNews.map((item) => (
 						<li key={item._id} className="flex items-start gap-4 border p-2">
 							<img src="/news/news3.jpg" alt={item.title} className="w-16 h-16 object-cover rounded-lg shadow-md" />
 							<Link

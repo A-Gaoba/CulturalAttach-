@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { newsData } from "./newsData";
 import useNews from "../../api/useNews";
 
 function shortenString(longString: string) {

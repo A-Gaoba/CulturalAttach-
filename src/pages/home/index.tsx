@@ -53,7 +53,7 @@ const HomePage: React.FC = () => {
       <HeroSlider slides={slides} />
       <div>
 
-        <NewsList limit={3} />
+        <NewsList />
         <div className="text-center m-2">
           <Link
             to="/news"
