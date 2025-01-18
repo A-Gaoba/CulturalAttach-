@@ -45,8 +45,9 @@ const Footer: React.FC = () => {
 			<div className="text-center text-gray-600 dark:text-gray-400 mt-4">
 				<div className="text-sm">
 					<hr />
-					<p className="p-2">
-						© 2025 -{" "}
+					<p className="p-2">© 2025 - {t("footer.rights_reserved")}</p>
+					<p>
+						تم تطوير الموقع بواسطة
 						<span>
 							<a
 								href="https://gaoba.vercel.app"
@@ -57,9 +58,7 @@ const Footer: React.FC = () => {
 								Gaoba
 							</a>
 						</span>
-            <span>
-              &
-            </span>
+						<span>&</span>
 						<span>
 							<a
 								href="https://eskander-taher.vercel.app/"
@@ -70,7 +69,6 @@ const Footer: React.FC = () => {
 								Eskander
 							</a>
 						</span>
-						{t("footer.rights_reserved")}
 					</p>
 				</div>
 			</div>
