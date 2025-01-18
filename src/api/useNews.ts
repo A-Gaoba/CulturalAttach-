@@ -2,6 +2,7 @@ import { toast } from "react-toastify";
 import { News } from "../types";
 import { useQuery, useMutation, useQueryClient } from "@tanstack/react-query";
 import myAxios from "./myAxios";
+import { useParams } from "react-router-dom";
 
 export const fetchNews = async (): Promise<News[]> => {
 	const response = await myAxios.get("/news");
@@ -10,6 +11,11 @@ export const fetchNews = async (): Promise<News[]> => {
 
 export const createNews = async (news: Omit<News, "id">): Promise<News> => {
 	const response = await myAxios.post("/news", news);
+	return response.data;
+};
+
+export const getNewsById = async (id: string | undefined) => {
+	const response = await myAxios.get(`/news/${id}`);
 	return response.data;
 };
 
@@ -42,6 +48,12 @@ export default function useNews() {
 		},
 	});
 
+	const { id } = useParams();
+	const getByIdQuery = useQuery({
+		queryKey: ["news"],
+		queryFn: () => getNewsById(id),
+	});
+
 	const updateMutation = useMutation({
 		mutationFn: updateNews,
 		onSuccess: () => {
@@ -68,6 +80,7 @@ export default function useNews() {
 
 	return {
 		getQuery,
+		getByIdQuery,
 		createMutation,
 		updateMutation,
 		deleteMutation,

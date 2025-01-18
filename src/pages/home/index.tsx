@@ -9,12 +9,6 @@ import { Link } from "react-router-dom";
 const HomePage: React.FC = () => {
   const { t } = useTranslation();
   const slides = [
-    // {
-    //   id: 1,
-    //   image: "/hero1.jpg",
-    //   title: "SANA'A",
-    //   description: "",
-    // },
     {
       id: 1,
       image: "/hero3.jpg",

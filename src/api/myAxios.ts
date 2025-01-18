@@ -6,19 +6,4 @@ const myAxios = axios.create({
 	baseURL: BASE_URL,
 });
 
-// Request interceptor to add the token to the headers
-myAxios.interceptors.request.use(
-	(config) => {
-		const token = localStorage.getItem("token");
-		if (token) {
-			const modifiedToken = token.slice(1, -1);
-			config.headers.Authorization = `Bearer ${modifiedToken}`;
-		}
-		return config;
-	},
-	(error) => {
-		return Promise.reject(error);
-	}
-);
-
 export default myAxios;

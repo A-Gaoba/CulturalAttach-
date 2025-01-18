@@ -13,8 +13,6 @@ import Contact from "./components/Contact";
 import SetDirection from "./components/SetDirection";
 import NewsPage from "./pages/news/NewsPage";
 import NewsDetails from "./pages/news/NewsDetails";
-import Admin from "./pages/admin";
-import Login from "./pages/login";
 
 
 function App() {
@@ -51,36 +49,34 @@ function App() {
   }
 
   return (
-    <div>
-      <Router>
-        <SetDirection />
-        <Navbar />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/almoulhaqia" element={<Almoulhaqia />} />
-          <Route path="/services" element={<OnlineServices />} />
-          <Route path="/activities" element={<CulturalActivities />} />
-          <Route path="/news" element={<NewsPage />} />
-          <Route path="/news/:id" element={<NewsDetails />} />
-          <Route path="/announcements" element={<AnnouncementsAndNotifications />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/admin" element={<Admin />} />
-          <Route path="/login" element={<Login />} />
-        </Routes>
-        <Footer />
-      </Router>
+		<div>
+			<Router>
+				<SetDirection />
+				<Navbar />
+				<Routes>
+					<Route path="/" element={<Home />} />
+					<Route path="/almoulhaqia" element={<Almoulhaqia />} />
+					<Route path="/services" element={<OnlineServices />} />
+					<Route path="/activities" element={<CulturalActivities />} />
+					<Route path="/news" element={<NewsPage />} />
+					<Route path="/news/:id" element={<NewsDetails />} />
+					<Route path="/announcements" element={<AnnouncementsAndNotifications />} />
+					<Route path="/contact" element={<Contact />} />
+				</Routes>
+				<Footer />
+			</Router>
 
-      {/* Scroll-to-top button */}
-      {showScrollButton && (
-        <button
-          onClick={scrollToTop}
-          className="fixed bottom-4 right-4 bg-red-500 text-white p-3 rounded-full shadow-lg hover:bg-red-700 focus:outline-none"
-          aria-label="Scroll to top"
-        >
-          <FaArrowUp size={20} />
-        </button>
-      )}
-    </div>
+			{/* Scroll-to-top button */}
+			{showScrollButton && (
+				<button
+					onClick={scrollToTop}
+					className="fixed bottom-4 right-4 bg-red-500 text-white p-3 rounded-full shadow-lg hover:bg-red-700 focus:outline-none"
+					aria-label="Scroll to top"
+				>
+					<FaArrowUp size={20} />
+				</button>
+			)}
+		</div>
   );
 }
 
