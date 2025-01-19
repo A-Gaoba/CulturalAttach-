@@ -104,7 +104,7 @@ const ImportantNewsCard = () => {
     id: 1,
     title: "Important News Title",
     description: "This is a description of the important news.",
-    image: "/news/important.jpg",
+    image: "/news/news3.jpg",
     important: true,
   };
 
