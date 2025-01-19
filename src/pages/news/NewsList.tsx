@@ -1,14 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import useNews from "../../api/useNews";
+import { shortenString } from "../../utils";
 
-function shortenString(longString: string) {
-	if (longString.length <= 100) {
-		return longString;
-	} else {
-		return longString.substring(0, 100) + "...";
-	}
-}
+
 
 const NewsList: React.FC = () => {
 	const { getQuery } = useNews();
