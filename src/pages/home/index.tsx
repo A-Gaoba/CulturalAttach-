@@ -76,7 +76,7 @@ const HomePage: React.FC = () => {
     <div>
       <HeroSlider slides={slides} />
 
-      <div className="flex md:flex-row flex-col-reverse ">
+      <div className="flex justify-center items-center md:flex-row flex-col-reverse ">
         <main className="w-3/4 p-4">
           <NewsList />
           <div className="text-center m-2">
