@@ -325,7 +325,7 @@ const AnnouncementsAndNotifications: React.FC = () => {
 		<div className="p-4 max-w-7xl mx-auto">
 			<h1 className="text-2xl font-bold text-gray-900 mb-6">الإعلانات والإشعارات</h1>
 			<div className="border border-gray-300 p-4 rounded-lg shadow-sm space-y-4">
-				<ToggleList title="اللوائح والقوانين المتعلقة بالطلاب الدراسين في روسيا الاتحادية" content={regulationsContent} />
+				<ToggleList title="اللوائح والقوانين المتعلقة بالطلاب الدارسين في روسيا الاتحادية" content={regulationsContent} />
 				<ToggleList
 					title="تكاليف الحياة في روسيا لعام 2024: دليلك الشامل للمعيشة الطلابية"
 					content={costOfLivingContent}
